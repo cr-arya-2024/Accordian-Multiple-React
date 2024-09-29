@@ -1,0 +1,35 @@
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+}
+.item{
+    padding:20px 30px;
+    background-color: sienna;
+    color: aliceblue;
+    margin-bottom:  10px;
+    text-align: center;
+    
+}
+.wrapper span   {
+    margin-left: 10px;
+    color:black;
+    background-color: aliceblue;
+    font-weight: bolder;
+    font-size: x-large;
+    padding: 5px ;
+    border-radius: 5px
+}
+.answer{
+   margin-top: 10px;
+}
+.enable-btn{
+    padding: 10px 20px;
+    border: none;
+    color: aliceblue;
+    background-color:sienna;
+    margin-bottom:20px
+}
