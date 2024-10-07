@@ -1,0 +1,25 @@
+.conatianer{
+    display: grid;
+    grid-template-columns: repeat(4,1fr)
+}
+.loader-container{
+    height: 300px;
+    border: 2px solid rgba(128, 128, 128, 0.308);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
+    text-align: center;
+    margin: 15px;
+}
+.loader-container img{
+    height: 150px;
+    width: 150px;
+}
+.div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ; 
+}
