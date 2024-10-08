@@ -2,6 +2,7 @@
 
 import './App.css'
 import Accordian from './Component/Accordion'
+import LightDarkMoode from './Component/DarkMode'
 import ImageSlider from './Component/Image-Slider'
 import LoadMore from './Component/Load-more'
 import QRCode from './Component/QRCode'
@@ -19,8 +20,8 @@ function App() {
      {/* <StarRating/> */}
      {/* <ImageSlider url={'https://picsum.photos/v2/list'} limit= {'10'}/> */}
      {/* <LoadMore /> */}
-     <QRCode/>
-
+     {/* <QRCode/> */}
+<LightDarkMoode/>
     </>
   )
 }
