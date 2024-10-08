@@ -9,7 +9,9 @@ function handleToogleTheme(){
     return <div className="light-dark-mode" data-theme={theme}>
         <div className="container">
             <p>Hello World</p>
-            <button onClick={handleToogleTheme}>Change Theme</button>
+            <button onClick={handleToogleTheme}>
+                <div data-theme={theme}></div>
+            </button>
         </div>
     </div>
 }
