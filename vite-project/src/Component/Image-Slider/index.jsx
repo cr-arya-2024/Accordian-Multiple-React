@@ -11,7 +11,7 @@ export default function ImageSlider({url,limit}){
 try{
     setLoading(true)
   let  response=await fetch (`${getUrl}?page=1&limit=${limit}`)
-  const data=response.json();
+  const data=await response.json();
   if(data){
     setImages(data)
 setLoading(false) 
