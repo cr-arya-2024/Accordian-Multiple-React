@@ -9,6 +9,10 @@ import QRCode from './Component/QRCode'
 import RandomColor from './Component/RandomColor'
 import ScrollIndicator from './Component/Scroll-Indicator'
 import StarRating from './Component/StarRating'
+import TabTest from './Component/tab/tab-test'
+import Tabs from './Component/tab/tabs'
+
+
 
 
 
@@ -24,7 +28,9 @@ function App() {
      {/* <LoadMore /> */}
      {/* <QRCode/> */}
 {/* <LightDarkMoode/> */}
-    <ScrollIndicator url={'https://dummyjson.com/products?'}/>
+    {/* <ScrollIndicator url={'https://dummyjson.com/products?'}/> */}
+  <TabTest/>
+
     </>
   )
 }

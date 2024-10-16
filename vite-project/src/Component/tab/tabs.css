@@ -1,0 +1,9 @@
+.heading{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+.wrapper{
+    height: 110vh;
+width: 100vw;
+}
