@@ -14,10 +14,6 @@ export default function TabTest() {
         label: 'tab3',
         conent:<RandomColor/>
     }]
-const handleChange=(currentTabIndex)=>{
-console.log(currentTabIndex);
 
-
-}
-    return <Tabs  tabsContent={tabs} onChange={handleChange}/>
+    return <Tabs  tabsContent={tabs} />
 }

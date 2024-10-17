@@ -1,0 +1,49 @@
+.modal {
+    position: fixed;
+    z-index: 1;
+    padding-top: 150px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    
+    height: 100%;
+    overflow: auto;
+    background-color: #9bb81c;
+
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fff;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+    border: 1px solid red;
+    width: 80%;
+    
+    animation-name: forward;
+    animation-duration: 0.5s;
+}
+
+.close-modal-icon {
+    font-size: xx-large;
+    font-weight: 900r;
+    padding-left: 01000px;
+
+}
+
+@keyframes forward {
+    from {
+        top: -600px;
+        opacity: 0;
+
+    }
+
+    to {
+        top: 0px;
+        opacity: 1;
+    }
+}

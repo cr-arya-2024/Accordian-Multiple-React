@@ -1,10 +1,10 @@
 import { useState } from "react"
 import'./tabs.css'
-export default function Tabs({ tabsContent, onChange }) {
+export default function Tabs({ tabsContent  }) {
     const [currentTabIndex, setCurrentTabIndex] = useState(0)
     function handleOnClick(getCurrentIndex) {
         setCurrentTabIndex(getCurrentIndex)
-        onChange(getCurrentIndex)
+        
     }
     return <div className="wrapper">
         <div className="heading">{

@@ -5,6 +5,7 @@ import Accordian from './Component/Accordion'
 import LightDarkMoode from './Component/DarkMode'
 import ImageSlider from './Component/Image-Slider'
 import LoadMore from './Component/Load-more'
+import ModalTest from './Component/PopUp/index1'
 import QRCode from './Component/QRCode'
 import RandomColor from './Component/RandomColor'
 import ScrollIndicator from './Component/Scroll-Indicator'
@@ -29,8 +30,8 @@ function App() {
      {/* <QRCode/> */}
 {/* <LightDarkMoode/> */}
     {/* <ScrollIndicator url={'https://dummyjson.com/products?'}/> */}
-  <TabTest/>
-
+  {/* <TabTest/> */}
+<ModalTest/>
     </>
   )
 }
