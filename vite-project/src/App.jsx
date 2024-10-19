@@ -3,6 +3,7 @@
 import './App.css'
 import Accordian from './Component/Accordion'
 import LightDarkMoode from './Component/DarkMode'
+import GitHubFinder from './Component/Github-finder'
 import ImageSlider from './Component/Image-Slider'
 import LoadMore from './Component/Load-more'
 import ModalTest from './Component/PopUp/index1'
@@ -31,7 +32,8 @@ function App() {
 {/* <LightDarkMoode/> */}
     {/* <ScrollIndicator url={'https://dummyjson.com/products?'}/> */}
   {/* <TabTest/> */}
-<ModalTest/>
+{/* <ModalTest/> */}
+<GitHubFinder/>
     </>
   )
 }
