@@ -2,6 +2,7 @@
 
 import './App.css'
 import Accordian from './Component/Accordion'
+import SearchAutocomplete from './Component/Auto-search-complete'
 import LightDarkMoode from './Component/DarkMode'
 import GitHubFinder from './Component/Github-finder'
 import ImageSlider from './Component/Image-Slider'
@@ -33,7 +34,8 @@ function App() {
     {/* <ScrollIndicator url={'https://dummyjson.com/products?'}/> */}
   {/* <TabTest/> */}
 {/* <ModalTest/> */}
-<GitHubFinder/>
+{/* <GitHubFinder/> */}
+<SearchAutocomplete/>
     </>
   )
 }

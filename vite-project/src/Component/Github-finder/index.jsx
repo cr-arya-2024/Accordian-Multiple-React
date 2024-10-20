@@ -1,17 +1,19 @@
 import { useEffect, useState } from "react"
 
 export default function GitHubFinder() {
-    const [userData, setUserData] = useState('tom')
+    const [userData, setUserData] = useState('cr-arya-2024')
     const [user, setUser] = useState([])
     const [error, setError] = useState(null)
     const [loading, setLoading] = useState(false)
 
-
+const url=`https://api.github.com/users/${userData}`
     async function fetchData() {
         try {
             setLoading(true)
-            const response = await fetch(`https://api.github.com/users/${userData}`)
+            const response = await fetch(url)
             const data = await response.json()
+            console.log(data);
+            
             if (data) {
                 setLoading(false)
                 setUser(data)
@@ -26,6 +28,7 @@ export default function GitHubFinder() {
 
     useEffect(() => {
         fetchData()
+        
     }, [])
 
 
@@ -37,8 +40,11 @@ export default function GitHubFinder() {
     }
 
     function handle() {
+        fetchData();
         setUserData('')
     }
+    console.log("hellooooo");
+    
     return (
         <div>
             <div>
@@ -52,7 +58,8 @@ export default function GitHubFinder() {
             {
                 <div>
                     <img src={user.avatar_url} alt="Dp" />
-<a href={`https://api.github.com/users/${user.login}`}></a>
+<p><a href={`https://github.com/${user.login}`}>{user.url}</a></p>
+<p>{user.followers}</p>
                 </div>
 
             }
