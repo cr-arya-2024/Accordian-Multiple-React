@@ -14,6 +14,7 @@ import ScrollIndicator from './Component/Scroll-Indicator'
 import StarRating from './Component/StarRating'
 import TabTest from './Component/tab/tab-test'
 import Tabs from './Component/tab/tabs'
+import TicTAcToe from './TIcTacToe'
 
 
 
@@ -35,7 +36,8 @@ function App() {
   {/* <TabTest/> */}
 {/* <ModalTest/> */}
 {/* <GitHubFinder/> */}
-<SearchAutocomplete/>
+{/* <SearchAutocomplete/> */}
+   <TicTAcToe/>
     </>
   )
 }

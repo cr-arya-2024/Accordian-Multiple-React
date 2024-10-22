@@ -40,6 +40,12 @@ export default function SearchAutocomplete() {
             setError(e.message)
         }
     }
+    
+    if(error!==null){
+        return <div>
+            error 
+        </div>
+    }
 
     useEffect(() => {
         fetchListOfUsers()
