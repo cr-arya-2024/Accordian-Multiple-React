@@ -4,7 +4,7 @@ export default function TicTAcToe() {
     function handleClick(getCurrentId) {
         const cpySqr = [...square]
         console.log(getCurrentId);
-        if ( cpySqr[getCurrentId]) return
+        if (cpySqr[getCurrentId]) return
         cpySqr[getCurrentId] = turn ? 'X' : 'O'
         setTurn(!turn)
         setSquare(cpySqr)
@@ -32,23 +32,31 @@ export default function TicTAcToe() {
             square[2] != null && square[2] === square[5] && square[8] === square[5] ||
             square[2] != null && square[2] === square[4] && square[4] === square[6]
 
-        ) {
-            return <div><h1>WINNER</h1></div>}
-       
+        ) { setActive(<h1>WINNER</h1>)
+            setDisabled(false)
+            
+           
+}
+
 
     }
-
-
+function handle(){
+    setSquare(Array(9).fill(null))
+    setTurn(true)
+    setActive("")
+}
     const [square, setSquare] = useState(Array(9).fill(null))
     const [turn, setTurn] = useState(true)
-    const [status, setStatus] = useState('')
+    const [disabled, setDisabled] = useState("true")
+    const [active,setActive]=useState('')
+
     console.log(square)
     console.log(turn);
     useEffect(() => {
         Result()
     }, [turn])
     return (
-        <div className="container" style={{ display: "flex",flexDirection:"column" }}>
+        <div className="container" style={{ display: "flex", flexDirection: "column" }}>
             <div className="row-section" style={{ display: "flex", flexDirection: "row" }}>
                 <div className="row">
                     <Square value={square[0]} onClick={() => handleClick(0)} />
@@ -67,9 +75,9 @@ export default function TicTAcToe() {
                 </div>
             </div>
             <div>
-                <Result />
+              {active}
             </div>
-
+            <button onClick={handle} disabled={ disabled}>RESET</button>
         </div>
     )
 }

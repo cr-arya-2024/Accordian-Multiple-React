@@ -4,6 +4,8 @@ import './App.css'
 import Accordian from './Component/Accordion'
 import SearchAutocomplete from './Component/Auto-search-complete'
 import LightDarkMoode from './Component/DarkMode'
+import FeatureFlags from './Component/Feature'
+import FeatureFlageGlobal from './Component/Feature/context'
 import GitHubFinder from './Component/Github-finder'
 import ImageSlider from './Component/Image-Slider'
 import LoadMore from './Component/Load-more'
@@ -25,19 +27,22 @@ function App() {
 
   return (
     <>
-     {/* <Accordian /> */}
-     {/* <RandomColor /> */}
-     {/* <StarRating/> */}
-     {/* <ImageSlider url={'https://picsum.photos/v2/list'} limit= {'10'}/> */}
-     {/* <LoadMore /> */}
-     {/* <QRCode/> */}
-{/* <LightDarkMoode/> */}
-    {/* <ScrollIndicator url={'https://dummyjson.com/products?'}/> */}
-  {/* <TabTest/> */}
-{/* <ModalTest/> */}
-{/* <GitHubFinder/> */}
-{/* <SearchAutocomplete/> */}
-   <TicTAcToe/>
+      {/* <Accordian /> */}
+      {/* <RandomColor /> */}
+      {/* <StarRating/> */}
+      {/* <ImageSlider url={'https://picsum.photos/v2/list'} limit= {'10'}/> */}
+      {/* <LoadMore /> */}
+      {/* <QRCode/> */}
+      {/* <LightDarkMoode/> */}
+      {/* <ScrollIndicator url={'https://dummyjson.com/products?'}/> */}
+      {/* <TabTest/> */}
+      {/* <ModalTest/> */}
+      {/* <GitHubFinder/> */}
+      {/* <SearchAutocomplete/> */}
+      {/* <TicTAcToe/> */}
+      <FeatureFlageGlobal>
+        <FeatureFlags />
+      </FeatureFlageGlobal>
     </>
   )
 }
