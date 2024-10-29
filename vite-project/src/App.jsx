@@ -16,6 +16,9 @@ import ScrollIndicator from './Component/Scroll-Indicator'
 import StarRating from './Component/StarRating'
 import TabTest from './Component/tab/tab-test'
 import Tabs from './Component/tab/tabs'
+import Test from './CustomHooks/useClick/test'
+import UseFetchHookTEst from './CustomHooks/useFetch-CostomHook/test'
+import Test2 from './CustomHooks/useResize/test'
 import TicTAcToe from './TIcTacToe'
 
 
@@ -40,9 +43,12 @@ function App() {
       {/* <GitHubFinder/> */}
       {/* <SearchAutocomplete/> */}
       {/* <TicTAcToe/> */}
-      <FeatureFlageGlobal>
+      {/* <FeatureFlageGlobal>
         <FeatureFlags />
-      </FeatureFlageGlobal>
+      </FeatureFlageGlobal> */}
+      {/* <UseFetchHookTEst/> */}
+      <Test/>
+      {/* <Test2/> */}
     </>
   )
 }
